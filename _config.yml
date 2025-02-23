@@ -89,28 +89,28 @@ content:
         sub_title: Senoir Researcher
         caption: 2024 - Present
         # link: Link to company (optional)
-        # quote: >
-        #   Short description of the company (optional)
-        # description: | # {{{this will include new lines to allow paragraphs}}}
-        #   Description of role
+        quote: >
+          Short description of the company (optional)
+        description: | # {{{this will include new lines to allow paragraphs}}}
+          Description of role
       - layout: right
         title: Samsung SAIT
         sub_title: Senoir Researcher
         caption: 2022 - 2024
         # link: Link to company (optional)
-        # quote: >
-        #   Short description of the company (optional)
-        # description: | # {{{this will include new lines to allow paragraphs}}}
-        #   Description of role
+        quote: >
+          Short description of the company (optional)
+        description: | # {{{this will include new lines to allow paragraphs}}}
+          Description of role
       - layout: right
         title: Korea Institute of Atmospheric Prediction Systems
         sub_title: Senoir Researcher
         caption: 2020 - 2022
         # link: Link to company (optional)
-        # quote: >
-        #   Short description of the company (optional)
-        # description: | # {{{this will include new lines to allow paragraphs}}}
-        #   Description of role
+        quote: >
+          Short description of the company (optional)
+        description: | # {{{this will include new lines to allow paragraphs}}}
+          Description of role
       - layout: right
         title: Yonsei university
         sub_title: Post Doctor
@@ -127,10 +127,10 @@ content:
         title: Yonsei university
         sub_title: Computational Science and Engineering Ph.D
         caption: 2014 - 2020
-        # quote: >
-        #   Short institution or course description (optional)
-        # description: | # {{{this will include new lines to allow paragraphs}}}
-        #   Description of qualification
+        quote: >
+          Short institution or course description (optional)
+        description: | # {{{this will include new lines to allow paragraphs}}}
+          Description of qualification
       - layout: top-right
         title: Yonsei university
         sub_title: Astronomy BS
