@@ -143,10 +143,10 @@ content:
         title: Yonsei university
         sub_title: Computational Science and Engineering Ph.D
         caption: 2014 - 2020
-        quote: >
-          Short institution or course description (optional)
-        description: | # {{{this will include new lines to allow paragraphs}}}
-          Description of qualification
+        # quote: >
+        #   Short institution or course description (optional)
+        # description: | # {{{this will include new lines to allow paragraphs}}}
+        #   Description of qualification
       - layout: top-right
         title: Yonsei university
         sub_title: Astronomy BS
