@@ -52,8 +52,10 @@ linkedin_username: kiha-kim-80622bb2
 # {{{about_title: About Me (Use this to override about section title)}}}
 about_profile_image: images/p1.png
 about_content: | # {{{this will include new lines to allow paragraphs}}}
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-  ver2
+  Senior Researcher with a Ph.D. in Computational Science and Engineering from Yonsei University.
+  My research focuses on <mark>high-performance computing</mark>, <mark>computational fluid dynamics</mark>, and <mark>parallel numerical algorithms</mark>.
+  I develop scalable solvers and libraries for large-scale simulations, including turbulent thermal convection, natural convection with non-Oberbeck–Boussinesq effects, and GPU-accelerated tridiagonal system solvers.
+  Currently at KISTI, I work on supercomputing acceleration for next-generation reactor simulations and exascale numerical libraries.
 
 #  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
 #    - Lists

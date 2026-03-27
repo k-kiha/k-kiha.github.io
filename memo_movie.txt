@@ -1,0 +1,8 @@
+-rw-r--r--@ 1 kiha  staff    49M Feb  4 17:40 gpu_fab_xy3.mp4
+-rw-r--r--@ 1 kiha  staff    42M Feb  4 17:40 gpu_fab_xy1.mp4
+-rw-r--r--@ 1 kiha  staff    42M Feb  4 17:40 gpu_fab_xy2.mp4
+-rw-r--r--@ 1 kiha  staff    30M Feb  4 17:38 gpu_fab_xz.mp4
+-rw-r--r--@ 1 kiha  staff   8.1M Feb  4 17:41 rbc_3d.mp4
+-rw-r--r--@ 1 kiha  staff   4.3M Feb  4 17:41 rbc_xy.mp4
+-rw-r--r--@ 1 kiha  staff   4.0M Feb  4 17:41 rbc_xz.mp4
+-rw-r--r--@ 1 kiha  staff   1.9M Feb  4 17:42 cylinder_osillation.mp4
