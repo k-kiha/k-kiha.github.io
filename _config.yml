@@ -87,31 +87,43 @@ content:
     content:
       - layout: right
         title: KISTI
-        sub_title: Senoir Researcher
+        sub_title: Senior Researcher
         caption: 2024 - Present
-        # link: Link to company (optional)
         quote: >
-          Short description of the company (optional)
-        description: | # {{{this will include new lines to allow paragraphs}}}
-          Description of role
+          Korea Institute of Science and Technology Information
+        description: |
+          **Supercomputing Acceleration for High-Fidelity Models**
+          - Developing a virtual reactor platform for next-generation Small Modular Reactor (SMR) design as part of a national strategic research initiative
+          - Accelerating large-scale virtual reactor simulations for SMR engineering analysis
+
+          **Exascale Numerical Linear Solver Library**
+          - Developing high-performance numerical libraries for linear systems essential to HPC applications
       - layout: right
         title: Samsung SAIT
-        sub_title: Senoir Researcher
+        sub_title: Senior Researcher
         caption: 2022 - 2024
-        # link: Link to company (optional)
         quote: >
-          Short description of the company (optional)
-        description: | # {{{this will include new lines to allow paragraphs}}}
-          Description of role
+          Samsung Advanced Institute of Technology
+        description: |
+          **Parallel Optimization of Molecular Dynamics Simulations**
+          - Explored acceleration strategies for the Conjugate Gradient (CG) solver in charge equilibration (Qeq) within LAMMPS-ReaxFF
+          - Applied non-blocking communication for ghost atom data exchange to improve parallel efficiency
+          - Improved convergence of the CG solver through better initial condition estimation
+
+          **Large-Scale GPU Parallelization of In-House CFD Code**
+          - Achieved high parallel scalability on multi-GPU systems
+          - Ported PaScaL_TDMA to GPU and optimized multi-node all-to-all communication for the Poisson solver
+          - Conducted high-resolution LES simulations of internal flows in semiconductor fabrication facilities with up to 8 billion grid points
       - layout: right
         title: Korea Institute of Atmospheric Prediction Systems
-        sub_title: Senoir Researcher
+        sub_title: Senior Researcher
         caption: 2020 - 2022
-        # link: Link to company (optional)
         quote: >
-          Short description of the company (optional)
-        description: | # {{{this will include new lines to allow paragraphs}}}
-          Description of role
+          KIAPS
+        description: |
+          **Development of a Global High-Resolution Weather Prediction Code**
+          - Implemented spectral element methods for solving non-hydrostatic governing equations (density, temperature, velocity, and pressure)
+          - Introduced multi-resolution grids to enhance spatial resolution around the Korean Peninsula
       - layout: right
         title: Yonsei university
         sub_title: Post Doctor
