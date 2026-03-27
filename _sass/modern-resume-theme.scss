@@ -180,6 +180,41 @@
   color: #4C4C4C;
 }
 
+.publications-container {
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.publications-list {
+  margin-top: 2rem;
+  padding-left: 2rem;
+
+  .publication-item {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .publication-title a {
+    font-weight: 500;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .publication-authors {
+    font-size: 1.4rem;
+    color: #666;
+  }
+
+  .publication-journal {
+    font-size: 1.4rem;
+  }
+}
+
 p.quote {
   font-size: 1.4rem;
   font-style: italic;

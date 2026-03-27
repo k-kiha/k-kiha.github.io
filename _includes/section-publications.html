@@ -1,0 +1,14 @@
+{% assign papers = site.data.researchlist | sort: "Year" | reverse %}
+<ol class="publications-list">
+  {% for paper in papers %}
+    <li class="publication-item">
+      <span class="publication-title">
+        {% if paper.DOI %}<a href="{{ paper.DOI }}" target="_blank">{{ paper.Title }}</a>{% else %}{{ paper.Title }}{% endif %}
+      </span>
+      <br>
+      <span class="publication-authors">{{ paper.Authors }}</span>
+      <br>
+      <span class="publication-journal"><em>{{ paper.Journal }}</em>, Vol. {{ paper.Volume }}{% if paper['Article/Pages'] %}, {{ paper['Article/Pages'] }}{% endif %} ({{ paper.Year }})</span>
+    </li>
+  {% endfor %}
+</ol>
