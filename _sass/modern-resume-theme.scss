@@ -189,14 +189,16 @@
 .publications-list {
   margin-top: 2rem;
   padding-left: 2rem;
+  font-size: 1.6rem;
 
   .publication-item {
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    margin-bottom: 2rem;
+    line-height: 1.8;
   }
 
   .publication-title a {
     font-weight: 500;
+    font-size: 1.7rem;
     color: inherit;
     text-decoration: none;
 
@@ -206,12 +208,12 @@
   }
 
   .publication-authors {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #666;
   }
 
   .publication-journal {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
