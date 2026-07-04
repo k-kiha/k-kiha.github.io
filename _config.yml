@@ -84,6 +84,32 @@ content:
   #         Short overview of the project (optional)
   #       description: | # {{{this will include new lines to allow paragraphs}}}
   #         Description about the work on/with the project
+  - title: Simulation Highlights
+    layout: text
+    content: |
+      <div class="sim-gallery">
+      <p style="margin:0 0 6px;"><strong>PaScaL_TDMA 2.1 — register-resident multi-GPU tridiagonal solver (CUDA)</strong> &middot; 20.7&times; on H100 / 14.0&times; on A100 &middot; <a href="https://github.com/k-kiha/PaScaL_TDMAcuda" target="_blank" rel="noopener">code</a></p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px;">
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/2qBb_qEUBRY?rel=0" title="PaScaL_TDMA 2.1 (1)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/jIAZ32WVT7k?rel=0" title="PaScaL_TDMA 2.1 (2)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/g_wTAVCysZg?rel=0" title="PaScaL_TDMA 2.1 (3)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/ltLFiWoTPds?rel=0" title="PaScaL_TDMA 2.1 (4)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p style="margin:0 0 6px;"><strong>GPU sparse linear solver — CSR Ax=b for reactor thermal-hydraulics (CUPID)</strong> &middot; cuSPARSE / cuBLAS / AmgX &middot; <a href="https://github.com/k-kiha/cuda-sparse-solver-extract" target="_blank" rel="noopener">code</a></p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px;">
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/2VqF5QMCloE?rel=0" title="GPU CSR sparse solver" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p style="margin:0 0 6px;"><strong>Turbulent Rayleigh&ndash;B&eacute;nard convection &mdash; direct numerical simulation</strong> &middot; PaScaL_TCS</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px;">
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/VjIk73OCUoA?rel=0" title="Rayleigh-Benard convection (1)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/kmb8PAabyoo?rel=0" title="Rayleigh-Benard convection (2)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/9bVE23ngUtI?rel=0" title="Rayleigh-Benard convection (3)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p style="margin:0 0 6px;"><strong>Lock-in of laminar flow over a streamwise-oscillating cylinder</strong> &middot; J. Fluid Mech. (2018)</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:4px;">
+      <iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/UwRBQve-398?rel=0" title="Oscillating cylinder lock-in" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+      </div>
   - title: Experience
     layout: list
     content:
