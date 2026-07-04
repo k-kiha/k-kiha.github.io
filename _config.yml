@@ -50,7 +50,7 @@ linkedin_username: kiha-kim-80622bb2
 
 # {{{About Section}}}
 # {{{about_title: About Me (Use this to override about section title)}}}
-about_profile_image: images/p1.png
+about_profile_image: images/p1.jpg
 about_content: | # {{{this will include new lines to allow paragraphs}}}
   Senior Researcher with a Ph.D. in Computational Science and Engineering from Yonsei University.
   My research focuses on <mark>high-performance computing</mark>, <mark>computational fluid dynamics</mark>, and <mark>parallel numerical algorithms</mark>.
