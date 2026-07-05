@@ -54,7 +54,7 @@ layout: portfolio
           <a href="{{ kh.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:{{ kh.email }}">Email</a>
         </div>
-        {% if kh.cv_url and kh.cv_url != "" %}<a class="cvbtn" href="{{ kh.cv_url }}">Download CV</a>{% else %}<a class="cvbtn" href="#" title="PDF coming soon">Download CV<span class="soon">soon</span></a>{% endif %}
+        {% if kh.cv_url and kh.cv_url != "" %}<a class="cvbtn" href="{{ kh.cv_url | relative_url }}" target="_blank" rel="noopener">Download CV</a>{% else %}<a class="cvbtn" href="#" title="PDF coming soon">Download CV<span class="soon">soon</span></a>{% endif %}
       </div>
 
       <div class="card">

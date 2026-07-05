@@ -150,7 +150,7 @@
         <a href="{{ '/#projects' | relative_url }}">Projects</a>
         <a href="{{ '/#publications' | relative_url }}">Publications</a>
         <a href="{{ '/simulations/' | relative_url }}">Simulations</a>
-        {% if site.data.kh.cv_url and site.data.kh.cv_url != "" %}<a href="{{ site.data.kh.cv_url }}">CV</a>{% else %}<a href="#" title="PDF coming soon">CV</a>{% endif %}
+        {% if site.data.kh.cv_url and site.data.kh.cv_url != "" %}<a href="{{ site.data.kh.cv_url | relative_url }}" target="_blank" rel="noopener">CV</a>{% else %}<a href="#" title="PDF coming soon">CV</a>{% endif %}
       </div>
     </div>
   </nav>

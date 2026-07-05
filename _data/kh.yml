@@ -20,7 +20,7 @@ title: "Ph.D. · Senior Researcher"
 affiliation: "KISTI · Seoul, Korea"
 photo: "/images/p1.jpg"          # change to your preferred image
 email: "kiha.kim@kisti.re.kr"
-cv_url: ""                        # leave empty to show "soon"
+cv_url: "/assets/KihaKim_Resume_NVIDIA_DevTech.pdf"   # PDF resume (leave empty to show "soon")
 links:
   github: "https://github.com/k-kiha"
   scholar: "https://scholar.google.com/citations?user=-cW61HsAAAAJ"
