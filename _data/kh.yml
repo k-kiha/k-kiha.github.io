@@ -1,0 +1,100 @@
+# ============================================================
+#  SITE CONTENT — edit this file to change the site's content.
+#  (Design/layout lives in _layouts/portfolio.html; do not need to touch it.)
+#  Markdown-style bold: use <b>...</b> in text fields.
+# ============================================================
+
+name: "Ki-Ha Kim"
+name_ko: "김기하"
+role: "Ph.D. · Senior Researcher, KISTI — high-performance computing, computational fluid dynamics, parallel numerical solvers."
+tagline_pre: "Parallel numerical methods and "
+tagline_hot: "GPU-accelerated solvers"
+tagline_post: " for computational fluid dynamics."
+about: >
+  I work on parallel, scalable solvers for the linear systems that arise in large-scale CFD —
+  tridiagonal, block-tridiagonal, and sparse — and on direct and large-eddy simulation of turbulent
+  flows. Recent work targets distributed multi-GPU systems (NVIDIA A100 · H100 · H200 · GH200).
+
+# sidebar profile card
+title: "Ph.D. · Senior Researcher"
+affiliation: "KISTI · Seoul, Korea"
+photo: "/images/p1.jpg"          # change to your preferred image
+email: "kiha.kim@kisti.re.kr"
+cv_url: ""                        # leave empty to show "soon"
+links:
+  github: "https://github.com/k-kiha"
+  scholar: "https://scholar.google.com/citations?user=-cW61HsAAAAJ"
+  linkedin: "https://www.linkedin.com/in/kiha-kim-80622bb2"
+
+metrics:
+  - { v: "20.7×", k: "H100 vs CPU · tridiagonal solver" }
+  - { v: "91–97%", k: "weak-scaling · 8× H200" }
+  - { v: "64", k: "GH200 GPUs · 1024³ grid" }
+  - { v: "262,144", k: "CPU cores · strong-scaled" }
+
+topics:
+  - { name: "GPU & parallel computing", n: 3 }
+  - { name: "Numerical solvers", n: 2 }
+  - { name: "CFD & turbulence", n: 4 }
+
+tags: ["CUDA","multi-GPU","CUDA-aware MPI","tridiagonal","block-tridiagonal","cuSPARSE","cuBLAS","cuFFT","AmgX","Krylov","ILU / AMG","Poisson / FFT","spectral-element","DNS","LES","Rayleigh–Bénard"]
+
+glance:
+  - "<b>9</b> publications (7 first/co-first)"
+  - "<b>5</b> open-source repositories"
+  - "NVIDIA <b>A100 → GH200</b>"
+  - "Fortran · CUDA C/C++ · Python"
+
+projects:
+  - title: "Multi-GPU tridiagonal &amp; block-tridiagonal solvers"
+    url: "https://github.com/k-kiha/PaScaL_BTDMA"
+    cats: "GPU / parallel computing · CUDA · MPI · tridiagonal solvers"
+    desc: "Communication-avoiding solvers (PaScaL_TDMA 2.1, PaScaL_BTDMA) for the batched (block-)tridiagonal systems in implicit CFD — exchanging only subdomain boundary rows, independent of system length."
+    result: "<b>14.0× / 20.7×</b> on A100 / H100 · <b>91–97%</b> weak-scaling on 8× H200 · <b>64 GH200</b> (1024³)"
+    links:
+      - { text: "PaScaL_TDMAcuda", url: "https://github.com/k-kiha/PaScaL_TDMAcuda" }
+      - { text: "PaScaL_BTDMA", url: "https://github.com/k-kiha/PaScaL_BTDMA" }
+      - { text: "simulations →", url: "/simulations/" }
+  - title: "GPU sparse linear solver for reactor thermal-hydraulics"
+    url: "https://github.com/k-kiha/cuda-sparse-solver-extract"
+    cats: "Numerical solvers · cuSPARSE · cuBLAS · AmgX · Krylov"
+    desc: "A GPU solver for sparse systems (CSR <code>Ax=b</code>) — BiCGStab with ILU(0) / algebraic-multigrid — integrated into the CUPID reactor code through a C ABI."
+    result: ""
+    links:
+      - { text: "cuda-sparse-solver-extract", url: "https://github.com/k-kiha/cuda-sparse-solver-extract" }
+      - { text: "simulations →", url: "/simulations/" }
+  - title: "Direct numerical simulation of turbulent convection"
+    url: "https://github.com/MPMC-Lab/PaScaL_TCS"
+    cats: "CFD / turbulence · DNS · LES · heat transfer"
+    desc: "DNS of turbulent Rayleigh–Bénard convection and differentially heated channels, and LES of cleanroom flows — near-wall turbulence, heat transport, and non-Oberbeck–Boussinesq effects (PaScaL_TCS)."
+    result: "<b>~2×10¹⁰</b> grid points · <b>131,072</b> cores · LES up to <b>8×10⁹</b> grid points"
+    links:
+      - { text: "PaScaL_TCS", url: "https://github.com/MPMC-Lab/PaScaL_TCS" }
+      - { text: "simulations →", url: "/simulations/" }
+
+publications:
+  - { year: "2026", title: "PaScaL_BTDMA", tail: ": a scalable parallel library for batched block-tridiagonal solvers on distributed multi-GPU systems.", venue: "Computer Physics Communications", status: "under review", badge: "", url: "", authors: "<b>K.-H. Kim</b>, J. Kim, Y. Hwang, K. Lee, J.-H. Kang, J.-I. Choi" }
+  - { year: "2026", title: "PaScaL_TDMA 2.1", tail: ": a register-resident multi-GPU tridiagonal matrix solver with optimized communication for large-scale CFD.", venue: "Computer Physics Communications 323:110120", status: "", badge: "", url: "https://doi.org/10.1016/j.cpc.2026.110120", authors: "<b>K.-H. Kim</b>, D. Lee, J. Lee, S. Oh, J.-H. Kang, J.-I. Choi" }
+  - { year: "2023", title: "PaScaL_TCS", tail: ": a versatile solver for large-scale turbulent convective heat transfer.", venue: "Computer Physics Communications 290:108779", status: "", badge: "", url: "https://doi.org/10.1016/j.cpc.2023.108779", authors: "<b>K.-H. Kim</b>, J.-H. Kang, X. Pan, J.-I. Choi" }
+  - { year: "2022", title: "", tail: "Monolithic projection-based method with staggered time discretization for non-Oberbeck–Boussinesq natural convection.", venue: "Journal of Computational Physics 463:111238", status: "", badge: "", url: "https://doi.org/10.1016/j.jcp.2022.111238", authors: "X. Pan, <b>K.-H. Kim</b>, J.-I. Choi" }
+  - { year: "2021", title: "PaScaL_TDMA", tail: ": a library of parallel and scalable solvers for massive tridiagonal systems.", venue: "Computer Physics Communications 260:107722", status: "", badge: "", url: "https://doi.org/10.1016/j.cpc.2020.107722", authors: "<b>K.-H. Kim</b>, J.-H. Kang, X. Pan, J.-I. Choi" }
+  - { year: "2021", title: "", tail: "Mean thermal energy balance analysis in differentially heated vertical channel flows.", venue: "Physics of Fluids 33:065120", status: "", badge: "Editor's Pick", url: "https://doi.org/10.1063/5.0052944", authors: "<b>K.-H. Kim</b>, J. Ahn, J.-I. Choi" }
+  - { year: "2021", title: "", tail: "Contribution of Reynolds shear stress to near-wall turbulence in Rayleigh–Bénard convection.", venue: "Int. J. Heat and Mass Transfer 181:121873", status: "", badge: "", url: "https://doi.org/10.1016/j.ijheatmasstransfer.2021.121873", authors: "J. Ahn, <b>K.-H. Kim</b>, X. Pan, J.-I. Choi" }
+  - { year: "2019", title: "", tail: "Efficient monolithic projection method with staggered time discretization for natural convection.", venue: "Int. J. Heat and Mass Transfer 144:118677", status: "", badge: "", url: "https://doi.org/10.1016/j.ijheatmasstransfer.2019.118677", authors: "X. Pan, <b>K.-H. Kim</b>, J.-I. Choi" }
+  - { year: "2018", title: "", tail: "Lock-in regions of laminar flows over a streamwise oscillating circular cylinder.", venue: "Journal of Fluid Mechanics 855:1060–1087", status: "", badge: "", url: "https://doi.org/10.1017/jfm.2018.787", authors: "<b>K.-H. Kim</b>, J.-I. Choi" }
+
+pubs_note: "9 papers — first or co-first author on 7."
+
+videos:
+  - label: "PaScaL_TDMA 2.1 — GPU tridiagonal solver"
+    sub: "Multi-GPU batched tridiagonal solver; 20.7× on H100."
+    ids: ["2qBb_qEUBRY","jIAZ32WVT7k","g_wTAVCysZg","ltLFiWoTPds"]
+  - label: "GPU sparse solver — reactor thermal-hydraulics (CUPID)"
+    sub: "cuSPARSE / cuBLAS / AmgX; CSR Ax=b."
+    ids: ["2VqF5QMCloE"]
+  - label: "Turbulent Rayleigh–Bénard convection — DNS"
+    sub: "PaScaL_TCS; direct numerical simulation."
+    ids: ["VjIk73OCUoA","kmb8PAabyoo","9bVE23ngUtI"]
+  - label: "Lock-in of flow over an oscillating cylinder"
+    sub: "J. Fluid Mech. (2018)."
+    ids: ["UwRBQve-398"]

@@ -1,0 +1,80 @@
+---
+layout: portfolio
+---
+{% assign kh = site.data.kh %}
+<div class="wrap">
+  <div class="layout">
+    <main>
+      <section class="intro" id="home">
+        <h1>{{ kh.name }} · {{ kh.name_ko }}</h1>
+        <p class="role">{{ kh.role }}</p>
+        <p>{{ kh.about }}</p>
+        <div class="metrics">
+          {% for m in kh.metrics %}<div class="metric"><div class="v">{{ m.v }}</div><div class="k">{{ m.k }}</div></div>{% endfor %}
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="eyebrow">Projects</h2>
+        {% for pr in kh.projects %}
+        <div class="entry">
+          <h3><a href="{{ pr.url }}" target="_blank" rel="noopener">{{ pr.title }}</a></h3>
+          {% assign cparts = pr.cats | split: " · " %}
+          <p class="cats"><span class="c">{{ cparts[0] }}</span>{% for c in cparts offset:1 %} · {{ c }}{% endfor %}</p>
+          <p class="d">{{ pr.desc }}</p>
+          {% if pr.result and pr.result != "" %}<p class="res">{{ pr.result }}</p>{% endif %}
+          <p class="lk">{% for l in pr.links %}<a href="{{ l.url }}"{% if l.url contains "http" %} target="_blank" rel="noopener"{% endif %}>{{ l.text }}</a>{% endfor %}</p>
+        </div>
+        {% endfor %}
+      </section>
+
+      <section id="publications">
+        <h2 class="eyebrow">Publications</h2>
+        <div class="pubs">
+          {% for p in kh.publications %}
+          <div class="pub">
+            <div class="yr">{{ p.year }}</div>
+            <div class="t">{% if p.title and p.title != "" %}<b>{{ p.title }}</b>{% endif %}{{ p.tail }} <span class="venue">{{ p.venue }}</span>{% if p.badge and p.badge != "" %}<span class="badge">{{ p.badge }}</span>{% endif %}{% if p.status and p.status != "" %}<span class="status">{{ p.status }}</span>{% endif %}{% if p.url and p.url != "" %}<a class="doi" href="{{ p.url }}" target="_blank" rel="noopener">doi</a>{% endif %}<span class="auth">{{ p.authors }}</span></div>
+          </div>
+          {% endfor %}
+        </div>
+        <p class="pubmore">{{ kh.pubs_note }} Full profile on <a href="{{ kh.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      </section>
+    </main>
+
+    <aside>
+      <div class="card pcard">
+        <img class="photo" src="{{ kh.photo | relative_url }}" alt="{{ kh.name }}" width="104" height="104">
+        <p class="nm">{{ kh.name }}</p>
+        <p class="ti">{{ kh.title }}</p>
+        <p class="tg">{{ kh.affiliation }}</p>
+        <div class="social">
+          <a href="{{ kh.links.github }}" target="_blank" rel="noopener">GitHub</a>
+          <a href="{{ kh.links.scholar }}" target="_blank" rel="noopener">Scholar</a>
+          <a href="{{ kh.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:{{ kh.email }}">Email</a>
+        </div>
+        {% if kh.cv_url and kh.cv_url != "" %}<a class="cvbtn" href="{{ kh.cv_url }}">Download CV</a>{% else %}<a class="cvbtn" href="#" title="PDF coming soon">Download CV<span class="soon">soon</span></a>{% endif %}
+      </div>
+
+      <div class="card">
+        <p class="side-h">Topics</p>
+        <ul class="topics">
+          {% for t in kh.topics %}<li>{{ t.name }} <span class="n">{{ t.n }}</span></li>{% endfor %}
+        </ul>
+      </div>
+
+      <div class="card">
+        <p class="side-h">Tags</p>
+        <div class="tags">
+          {% for tag in kh.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="side-h">At a glance</p>
+        <p class="glance">{% for g in kh.glance %}{{ g }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
+      </div>
+    </aside>
+  </div>
+</div>

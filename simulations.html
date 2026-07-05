@@ -1,0 +1,25 @@
+---
+layout: portfolio
+title: Simulations
+permalink: /simulations/
+---
+{% assign kh = site.data.kh %}
+<div class="wrap">
+  <div class="gallery-head">
+    <a class="backlink" href="{{ '/' | relative_url }}">← Back to home</a>
+    <h2 class="gtitle">Simulations &amp; visualizations</h2>
+    <p class="gintro">Renderings from the solvers and flow simulations — DNS of turbulent convection, LES of internal flows, and GPU-solver demonstrations.</p>
+
+    {% for grp in kh.videos %}
+    <div class="simgroup">
+      <p class="gl">{{ grp.label }}</p>
+      <p class="gs">{{ grp.sub }}</p>
+      <div class="vidgrid">
+        {% for id in grp.ids %}
+        <div class="vembed"><iframe src="https://www.youtube-nocookie.com/embed/{{ id }}?rel=0" title="{{ grp.label }}" loading="lazy" allowfullscreen frameborder="0"></iframe></div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
